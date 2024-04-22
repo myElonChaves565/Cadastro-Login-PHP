@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  z-index: 0;
+  font-size: 30px;
+  display: flex;
+
+  color: white;
+  text-wrap: nowrap;
+  width: auto;
+  height: 60px;
+}
+header h4 {
+  margin: 10px 20px;
+  align-content: center;
+}
+header a {
+  margin: 10px 20px;
+  font-size: 22px;
+  align-content: center;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+#sobre {
+  margin-left: 10px;
+}
+header a:hover {
+  font-size: 25px;
+  transition: 0.3s;
+  opacity: 1;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #141b1e;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    ),
+    /* bottom, image */ url(/Imgs/back.jpeg);
+
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-left {
+  width: 45%;
+  display: flex;
+}
+footer {
+  bottom: 0;
+  right: 3px;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+}
+footer a {
+  text-decoration: none;
+  font-style: none;
+  color: white;
+  opacity: 0.8;
+  font-size: 23px;
+}
+footer a:hover {
+  transition: 0.2s;
+  opacity: 1;
+  color: #e0b280;
+}
+.card-left h1 {
+  top: 10%;
+  z-index: 1;
+  position: absolute;
+}
+.card-left img {
+  position: relative;
+  height: 100%;
+}
+.card-right {
+  z-index: 1;
+  display: flex;
+  height: fit-content;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid fa-user {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+}
+.login {
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  background-color: #884926;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #1b1919;
+}
+.login form {
+  width: 70%;
+}
+.login input {
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  outline: none;
+  background-color: #aa7842;
+  color: rgb(255, 255, 255);
+  border-style: none;
+  box-shadow: 2px 2px 10px black;
+  cursor: url(/Imgs/mouse.png), auto;
+}
+.input-submit input {
+  font-weight: bold;
+  margin: 10px auto;
+  border-radius: 30px;
+  padding: 19px;
+  box-shadow: none;
+  justify-content: center;
+  box-shadow: 2px 2px 10px black;
+  cursor: pointer;
+}
+.input-submit :hover {
+  background-color: #986125;
+  transition: 0.3s;
+}
+.input-senha {
+  margin-top: 30px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+.input-email {
+  margin-top: 20px;
+}
+.login i {
+  position: relative;
+  transform: translate(300px, -33px);
+}
+.login span {
+  box-sizing: border-box;
+  position: absolute;
+  transform: translate(-3px, -33px);
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+.login input:focus ~ span,
+.login textarea:focus ~ span,
+.login input:valid ~ span,
+.login textarea:valid ~ span {
+  transform: translate(-5px, -67px);
+  font-size: 17px;
+  opacity: 1;
+}
+
+.login a {
+  font-weight: bold;
+  color: #e0b280;
+  text-decoration: none;
+  font-style: none;
+}
