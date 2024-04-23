@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('backg.jpg');
+}
+
+.governarall {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  background: #1b0038;
+  box-shadow: 0 0 50px #0ef;
+  overflow: hidden;
+}
+
+.governarall:hover{
+  animation: animate 1s linear infinite;
+}
+@keyframes animate{
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.principal_form.sign-up {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 110%;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+.principal_form.sign-in {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+
+.governarall.active .principal_form.sign-in{
+  transform: translateY(-450px);
+}
+.governarall .principal_form.sign-up{
+  position: absolute;
+  top: 450px;
+  left: 0;
+
+}
+
+.governarall.active .principal_form.sign-up{
+  transform: translateY(-450px);
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.corpo_login {
+  margin: 30px 0;
+  position:relative ;
+  border-bottom:2px solid #fff ;
+}
+.corpo_login label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  font-size: 16px;
+  color: #fff;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.corpo_input {
+
+    margin: 30px 0;
+    position:relative ;
+    border-bottom:2px solid #fff ;
+  }
+.corpo_input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 16px;
+    color: #fff;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+
+
+}
+.corpo_input input{
+  padding: 0 5px;
+  height: 40px;
+  width: 320px;
+  background: transparent;
+  font-size: 16px ;
+  outline: none ;
+  color: #fff;
+  border: none;
+}
+.corpo_input input:focus~label,
+.corpo_input input:valid~label{
+  top: -5px;
+
+}
+.corpo_remember {
+margin: -5px 0 15px 5px;
+}
+
+.corpo_remember label {
+color: #fff;
+font-size: 14px;
+}
+.corpo_remember input{
+  accent-color: #0ef;
+
+
+
+}
+button{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+
+.corpo_inscreveUp {
+  font-size: 14;
+  text-align: center;
+  margin: 15px 0;
+
+}
+.corpo_inscreveUp p{
+  color: #fff;
+}
+
